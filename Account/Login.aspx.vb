@@ -9,6 +9,7 @@ Imports Microsoft.Owin.Security
 Public Partial Class Account_Login
     Inherits Page
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Session("TEST") = "test"
         RegisterHyperLink.NavigateUrl = "Register"
         OpenAuthLogin.ReturnUrl = Request.QueryString("ReturnUrl")
         Dim returnUrl = HttpUtility.UrlEncode(Request.QueryString("ReturnUrl"))

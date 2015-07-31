@@ -29,7 +29,6 @@ Partial Public Class Startup
 
         app.UseGoogleAuthentication(New GoogleOAuth2AuthenticationOptions() With {
            .ClientId = "513434054856-2vhup7nut9s3niltgm9rq3jur7h7e5mt.apps.googleusercontent.com",
-           .CallbackPath = New PathString("/Account/RegisterExternalLogin.aspx"),
            .ClientSecret = "kQOUn5ibwJOjZEDC6zvjpKSv"})
     End Sub
 End Class
